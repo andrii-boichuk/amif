@@ -7,6 +7,7 @@
   <title>Кабінет мануальної терапії Потоцького А.В.</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link href=" https://cdn.jsdelivr.net/npm/swiper@10.1.0/swiper-bundle.min.css " rel="stylesheet">
 </head>
 
 <body>
@@ -150,10 +151,240 @@
 
   <div class="doca">
     <h2>Лікар</h2>
-    
+    <div class="doca_img-wrapper">
+
+    </div>
+
+    <h3 class="doca_h3">
+      Потоцький Алєксандр Віталійович
+    </h3>
+    <ul>
+      <li>Мануальний тарпевт</li>
+      <li>Кайропракт</li>
+      <li>Остеопат</li>
+    </ul>
+    <div class="doca-read-more-wrapper">
+      <a href="#" class="doca_read-more">
+        Дізнатися більше
+      </a>
+    </div>
+  </div>
+
+  <div class="socials">
+    <div class="soials__item">
+      <div class="socials__inner">
+        <div class="socials__img socials__img--insta" src="" alt="photo"></div>
+        <div class="socials__text">
+          <h3>Dr. Alex Potocki</h3>
+          <p>
+          <ul>
+            <li>Мануальний терапевт</li>
+            <li>Остеопат</li>
+            <li>Кайропракт</li>
+          </ul>
+          <a href="am.if.ua"></a>am.if.ua<br>
+          Незалежності, 38, Івано-Франківськ <br>
+          <a href="tel:0666488763">066 64 88 763</a>
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="soials__item">
+      <div class="socials__inner">
+        <div class="socials__img socials__img--fb" src="" alt="photo"></div>
+
+        <div class="socials__text">
+          <h3>Potocki Alex</h3>
+          <p>
+          <ul>
+            <li>Мануальний терапевт</li>
+            <li>Остеопрактик в AMIF</li>
+            <li>Мануальна терапія</li>
+            <li>Івано-Франківськ</li>
+          </ul>
+          <br><br>Ivano-Frankivsk
+          </p>
+
+        </div>
+      </div>
+    </div>
   </div>
 
 
+
+  <section class="wherearewe">
+    <h3 class="wherearewe__h3">
+      Як до нас потрапити:
+    </h3>
+    <p>Для побудування маршруту перейдіть у google-maps</p>
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1310.9302656720697!2d24.7147329!3d48.9180494!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4730c1ce1ca971eb%3A0xad375a67fda56be0!2zQS5NLklGINCc0LDQvdGD0LDQu9GM0L3QsCDRgtC10YDQsNC_0ZbRjyDQhtCy0LDQvdC-LdCk0YDQsNC90LrRltCy0YHRjNC6!5e0!3m2!1suk!2sua!4v1691840498850!5m2!1suk!2sua"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+  </section>
+
+
+  <section class="schedule">
+    <div class="schedule__main">
+      <div class="schedule__item">
+        <h4 class="schedule__header">
+          Графік роботи
+        </h4>
+        <img src="./img/img_watch.svg" alt="">
+      </div>
+      <h4 class="schedule__header">
+        Понеділок - П'ятниця
+      </h4>
+      <p>10:00 - 19:00</p>
+    </div>
+  </section>
+
+  <section class="call-us">
+    <h4 class="call-us__header">
+      Зателефонуйте до нас, щоб записатися
+    </h4>
+    <a href="tel:0666488763">
+      <img src="./img/img_wave.svg" alt="">
+    </a>
+  </section>
+
+
+  <section class="feedback">
+    <h3 class="feedback__header">
+      Залиште оцінку та відгук
+    </h3>
+    <div class="rating">
+      <div class="rating__items">
+        <input id="rating__5" class="rating__item" type="radio" name="rating" value="5">
+        <label for="rating__5" class="rating__label"></label>
+        <input id="rating__4" class="rating__item" type="radio" name="rating" value="4">
+        <label for="rating__4" class="rating__label"></label>
+        <input id="rating__3" class="rating__item" type="radio" name="rating" value="3">
+        <label for="rating__3" class="rating__label"></label>
+        <input id="rating__2" class="rating__item" type="radio" name="rating" value="2">
+        <label for="rating__2" class="rating__label"></label>
+        <input id="rating__1" class="rating__item" type="radio" name="rating" value="1">
+        <label for="rating__1" class="rating__label"></label>
+      </div>
+
+    </div>
+    <form class="feedback__form" action="">
+      <div class="feedback__inner">
+        <input type="text" name="feedback__text" id="feedback__text-id">
+        <button class="feedback__btn"><img src="./img/img_send.svg" alt="send"></button>
+      </div>
+    </form>
+
+    <h3 class="feedback__h3">Відгуки</h3>
+    <div class="feedback__slider">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="feedback__name">Петя</div>
+            <div class="feedback__date">17-07-2023</div>
+            <div class="feedback__user-stars">
+              ★★★★★
+            </div>
+            <div class="feedback__user-text">
+              Отличній врач, знает свое дело и к тому
+              же очень приятній собеседник. Отличній
+              врач, знает свое дело
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="feedback__name">Петя</div>
+            <div class="feedback__date">17-07-2023</div>
+            <div class="feedback__user-stars">
+              ★★★★★
+            </div>
+            <div class="feedback__user-text">
+              Отличній врач, знает свое дело и к тому
+              же очень приятній собеседник. Отличній
+              врач, знает свое дело
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="feedback__name">Петя</div>
+            <div class="feedback__date">17-07-2023</div>
+            <div class="feedback__user-stars">
+              ★★★★★
+            </div>
+            <div class="feedback__user-text">
+              Отличній врач, знает свое дело и к тому
+              же очень приятній собеседник. Отличній
+              врач, знает свое дело
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="feedback__name">Петя</div>
+            <div class="feedback__date">17-07-2023</div>
+            <div class="feedback__user-stars">
+              ★★★★★
+            </div>
+            <div class="feedback__user-text">
+              Отличній врач, знает свое дело и к тому
+              же очень приятній собеседник. Отличній
+              врач, знает свое дело
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+      </div>
+
+    </div>
+
+
+  </section>
+  <!-- https://www.instagram.com/dr.potocki/ -->
+  <!-- https://www.facebook.com/dr.Alex.Potocki/  -->
+
+
+  <footer class="footer">
+    <h2 class="footer__header">
+      Кабінет мануальної терапії <br>
+      <span>Потоцького А.В.</span>
+    </h2>
+    <div class="footer__to-contact">
+      <a class="footer__to-contact-link" href="tel:0666488763">(066) 64 88 763</a>
+    </div>
+    <div class="footer__to-contact">
+      <a class="footer__to-contact-link" href="mailto:dr.alex.potocki@gmail">dr.alex.potocki@gmail.</a>
+    </div>
+    <div class="footer__to-contact">
+      м.Івано-Франківськ <br>
+      вул.Незалежності, 38 <br>
+      <span>(вхід з двору)</span>
+    </div>
+    <div class="footer__to-contact">
+      Пн — Пт з 10:00 до 19:00
+    </div>
+
+
+    <div class="footer__to-contact">
+      © Права захищені
+    </div>
+    <div class="footer__to-contact">
+      <img src="./img/main_logo.svg" alt="logo">
+    </div>
+
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10.1.0/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
 
 </body>
