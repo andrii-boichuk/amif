@@ -19,7 +19,9 @@
 h1, h2, h3, h4, h5 {
   font-family: "ProximaNova-Bold";
 }
-
+h2 {
+  margin-bottom: 50px;
+}
 ul li {
   padding-left: 20px;
   position: relative;
@@ -72,6 +74,7 @@ h1 {
   font-family: "ProximaNova-Bold";
   font-size: 40px;
   text-align: center;
+  margin-bottom: 150px;
 }
 
 h1 span {
@@ -126,6 +129,8 @@ bottom: 0;
   text-align: center;
   background-color: #008000;
   height: 74px;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 100px; 
 }
 
 .treatment {
@@ -191,6 +196,7 @@ h2 {
 }
 
 .methodology {
+  margin-bottom: 150px;
 }
 .methodology__item {
   border-top: 3px solid #b0bec5;
@@ -208,8 +214,16 @@ h2 {
 .doca {
   font-size: 30px;
   margin-bottom: 300px;
+  background-color: #ececec;
+  padding: 30px 0;
 }
-
+.doca__header-h2 {
+  margin: 0 auto 80px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #000;
+  width: 80%;
+  text-align: center;
+}
 .doca_h3 {
   display: block;
   font-size: 66px;
@@ -229,6 +243,19 @@ h2 {
   width: 100%;
   border-radius: 50%;
   margin-bottom: 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.doca_img-wrapper::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 2px solid #000;
+  bottom: 30%;
+  right: 30%;
+
 }
 
 .doca ul {
@@ -252,11 +279,15 @@ h2 {
 }
 .soials__item {
   margin-bottom: 60px;
+  background-color: #fff;
+  padding: 15px;
 }
 
 .socials__inner {
   display: flex;
   gap: 30px;
+  justify-content: start;
+  align-items: center;
 }
 .socials__img {
   height: 240px;
@@ -266,12 +297,34 @@ h2 {
   background-position: center;
   background-size: cover;
   border-radius: 50%;
+  position: relative;
+}
+
+
+.socials__img::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: calc(100% - 32px);
+  width: 62px;
+  height: 62px;
+  left: calc(50% - 32px);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+}
+.socials__img--fb {
+  background-image: url(../img/img-social-fb.png);
+}
+.socials__img--fb::after {
+  background-image: url(../img/Fb_logo.svg);
 }
 .socials__img--insta {
   background-image: url(../img/portrait.png);
 }
-.socials__img--fb {
-  background-image: url(../img/img-social-fb.png);
+.socials__img--insta::after {
+  background-image: url(../img/Insta.svg);
 }
 
 .socials__text {
@@ -287,6 +340,43 @@ h2 {
 ul li::before {
   content: "";
 }
+
+.wherearewe {
+  text-align: center;
+  margin-bottom: 150px;
+}
+.wherearewe__h3 {
+  font-size: 42px;
+}
+.wherearewe p {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.schedule {
+  margin-bottom: 150px;
+  text-align: center;
+}
+.schedule__main {
+  width: 90%;
+  border: 2px solid #fff;
+  margin: 0 auto;
+  padding: 30px;
+}
+.schedule__item {
+  padding: 20px 0;
+}
+.schedule__item:not(:last-child) {
+  border-bottom: 2px solid #fff;
+}
+.schedule__item  img {
+  display: inline-block;
+}
+.schedule__header {
+  margin-bottom: 20px;
+}
+
+
 
 map iframe{
   width: 100%;
@@ -378,6 +468,7 @@ map iframe{
 }
 .feedback__slider {
   font-size: 24px;
+  /* padding-bottom: 70px; */
 }
 .feedback__date {
   color: #ccc;
@@ -388,10 +479,19 @@ map iframe{
 }
 
 /* **************************** */
-/* .swiper {
-  width: 600px;
-  height: 300px;
-} */
+.swiper {
+  padding: 0 0 50px;
+}
+.swiper-pagination {
+
+}
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+}
+.swiper-pagination-bullet-active {
+  background-color: #666;
+}
 /* ***************************** */
 
 .footer{
